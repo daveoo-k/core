@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div id='whole'  >
+<div class='contentbox'>Rozpisana szafka</div> </br></br>
+    <div id='osoby'style='width:100%; border: 1px solid black' class='contentbox'>
+        Imię i nazwisko rozpisujacego: </br>
+         </br></br>
+    </div>
+    <div id='nazwa' style='width:100%' class='contentbox'> 
+        Cel przeznaczenia szafki : {{ szafka.nazwa }} </br> szerokosc płyty : {{ szafka.plyta}}mm </br></br>
+    </div>
+    <div name='row'style='width:100%; border: 1px solid black'>
+        <div class='cell'> </br></div>
+        <div class='cell'> Szerokość</br></div>
+        <div class='cell'> Wysokość </br></div>
+        <div class='cell'> Głębokość </br></div>
+  
+    </div>
+    <div name='row'style='width:100%; border: 1px solid black'>
+        <div class='cell'> Boki: </br></div>
+        <div class='cell'> </br></div>
+        <div class='cell'> {{ boki.y}} mm + | </br></div>
+        <div class='cell'> {{ boki.z}} mm + |  </br></div>
+  
+    </div>
+    <div name='row'style='width:100%; border: 1px solid black'>
+            <div class='cell'> Dol:  </br></div>
+            <div class='cell'> {{ dol.x }}mm + | </br></div>
+            <div class='cell'> </br></div>
+            <div class='cell'>{{ dol.z }}mm </br></div>
+    
+    <div name='row'style='width:100%; border: 1px solid black'>
+            <div class='cell'> Gora </br></div>
+            <div class='cell'> {{ gora.x }}mm + |</br></div>
+            <div class='cell'> </br></div>
+            <div class='cell'>{{ gora.z }}mm </br></div>
+    </div>
+    <div name='row'style='width:100%; border: 1px solid black'>
+            <div class='cell'> Front</br></div>
+            <div class='cell'> {{ front.x}}mm + ||</br></div>
+            <div class='cell'> {{ front.y}}mm + || </br></div>
+            <div class='cell'> </br></div>
+    </div>
+    <div name='row'style='width:100%; border: 1px solid black'>
+            <div class='cell'> Plecy </br></div>
+            <div class='cell'> {{ szafka.szerokosc }}mm </br></div>
+            <div class='cell'> {{ szafka.wysokosc }}mm </br></div>
+            <div class='cell'> </br></div>
+
+
+    </div> 
+
+    
+      
+</div>
+
+{% endblock %}
+
+{% block content_2 %}
+
+czas jazdy samochodem : 
+
+{%  endblock %}
